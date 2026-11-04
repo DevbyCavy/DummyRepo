@@ -44,7 +44,7 @@ export default function MobileMenu({ open, onClose }) {
                 end={to === '/'}
                 onClick={onClose}
                 className={({ isActive }) =>
-                  `font-display text-4xl font-light uppercase tracking-luxe transition-colors ${
+                  `font-display text-[clamp(1.75rem,8vw,2.25rem)] font-light uppercase tracking-luxe transition-colors ${
                     isActive ? 'text-gold-deep' : 'text-espresso hover:text-gold-deep'
                   }`
                 }

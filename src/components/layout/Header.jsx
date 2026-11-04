@@ -21,15 +21,15 @@ export default function Header() {
   const floating = !(isHome && !scrolled) || menuOpen;
 
   const bar = floating
-    ? 'mt-3 h-16 max-w-[1180px] rounded-full border-hairline bg-white/95 px-5 shadow-[0_10px_30px_rgba(43,37,32,0.10)] backdrop-blur-md md:mt-4 md:px-8'
-    : 'mt-0 h-20 max-w-content border-transparent bg-transparent px-6 md:px-10 lg:h-24';
+    ? 'mt-2 h-16 max-w-[1180px] rounded-full border-hairline bg-white/95 pl-5 pr-3 shadow-[0_10px_30px_rgba(43,37,32,0.10)] backdrop-blur-md sm:mt-3 sm:px-5 md:mt-4 md:px-8'
+    : 'mt-0 h-20 max-w-content border-transparent bg-transparent px-4 sm:px-6 md:px-10 lg:h-24';
   const linkColor = 'text-espresso';
 
   return (
     <>
-      <header className="fixed inset-x-0 top-0 z-50 px-3 md:px-6">
+      <header className="fixed inset-x-0 top-0 z-50 px-2 sm:px-3 md:px-6">
         <div
-          className={`mx-auto flex w-full items-center justify-between gap-6 border transition-all duration-500 ease-out ${bar}`}
+          className={`mx-auto flex w-full items-center justify-between gap-3 border transition-all duration-500 ease-out sm:gap-6 ${bar}`}
         >
           <Logo
             className={`shrink-0 origin-left transition-transform duration-500 ${floating ? 'scale-[0.85]' : 'scale-100'}`}
@@ -76,7 +76,7 @@ export default function Header() {
           </div>
 
           {/* Mobile right: WhatsApp icon + hamburger */}
-          <div className="flex items-center gap-3 lg:hidden">
+          <div className="flex shrink-0 items-center gap-1.5 sm:gap-3 lg:hidden">
             <BookNowButton
               variant="icon"
               placement="header-mobile"

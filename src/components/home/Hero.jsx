@@ -20,7 +20,7 @@ export default function Hero() {
       <div className="container-content relative grid min-h-[100svh] items-center gap-12 pb-16 pt-24 lg:grid-cols-12 lg:gap-10 lg:pb-20 lg:pt-32">
         {/* Text */}
         <div className="order-2 lg:order-1 lg:col-span-5 lg:pr-6">
-          <h1 className="text-espresso text-[clamp(2.75rem,5vw,4.75rem)]">
+          <h1 className="text-espresso text-[clamp(2.25rem,5vw,4.75rem)]">
             <span className="block">Spaces</span>
             <span className="block">That</span>
             <span className="block bg-gold-gradient bg-clip-text text-transparent">Inspire</span>
