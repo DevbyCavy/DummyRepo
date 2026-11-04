@@ -1,0 +1,40 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Dependencies
+/vendor/
+/node_modules/
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+config.local.php
+
+# Logs & cache
+*.log
+/logs/
+/cache/
+/tmp/
+
+# Build output
+/dist/
+/build/
+
+# User uploads
+/uploads/
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# Build output & raw images
+/raw-images/
+api/config.php

@@ -1,0 +1,42 @@
+@import '@fontsource/cormorant-garamond/300.css';
+@import '@fontsource/cormorant-garamond/400.css';
+@import '@fontsource/cormorant-garamond/300-italic.css';
+@import '@fontsource/jost/300.css';
+@import '@fontsource/jost/400.css';
+@import '@fontsource/jost/500.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply font-sans font-light text-espresso bg-white; line-height: 1.75; }
+  h1, h2, h3 { @apply font-display font-light uppercase tracking-luxe; line-height: 1.15; }
+  :focus-visible { outline: 2px solid #A07840; outline-offset: 3px; }
+  ::selection { background: #F4EBDC; }
+}
+
+@layer components {
+  .container-content { @apply mx-auto w-full max-w-content px-6 md:px-10; }
+  .section { @apply py-[4.5rem] md:py-32; }
+  .h1 { font-size: clamp(2.25rem, 5vw, 4.5rem); }
+  .h2 { font-size: clamp(1.75rem, 3.5vw, 3rem); }
+  .eyebrow { @apply font-sans font-medium uppercase tracking-wide3 text-gold-deep; font-size: 0.8125rem; }
+  .caption { @apply font-sans font-normal uppercase text-taupe; font-size: 0.75rem; letter-spacing: 0.2em; }
+  .label { @apply font-sans font-medium uppercase tracking-label; font-size: 0.75rem; }
+
+  /* Slow diagonal light sweep for gold buttons/bands */
+  .sheen { position: relative; overflow: hidden; isolation: isolate; }
+  .sheen::after {
+    content: ''; position: absolute; inset: 0; z-index: -1;
+    background: linear-gradient(115deg, transparent 30%, rgba(255,255,255,0.15) 50%, transparent 70%);
+    transform: translateX(-120%); transition: transform 1.2s ease;
+  }
+  .sheen:hover::after { transform: translateX(120%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
