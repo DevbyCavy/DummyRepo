@@ -8,6 +8,7 @@ import SocialIcons from '../components/ui/SocialIcons';
 import EnquiryForm from '../components/forms/EnquiryForm';
 import { whatsappLink, hasWhatsapp } from '../lib/whatsapp';
 import { track } from '../lib/analytics';
+import { useConsent } from '../lib/consent';
 import site from '../content/site.json';
 
 /** One large clickable contact method row. `featured` = WhatsApp (primary booking channel). */
@@ -59,8 +60,10 @@ function ContactRow({ Icon, label, value, note, href, external, featured, onClic
 
 /** Contact page — split editorial layout. */
 export default function Contact() {
-  const [showMap, setShowMap] = useState(false);
-  // TODO(open): confirm the studio address — the map searches for it.
+  const [mapRequested, setMapRequested] = useState(false);
+  const { allowsEmbeds } = useConsent();
+  // Map loads automatically once cookies are accepted, or on click with "essential only".
+  const showMap = allowsEmbeds || mapRequested;
   const mapSrc = `https://www.google.com/maps?q=${encodeURIComponent(site.address)}&output=embed`;
 
   return (
@@ -159,7 +162,7 @@ export default function Contact() {
             ) : (
               <button
                 type="button"
-                onClick={() => setShowMap(true)}
+                onClick={() => setMapRequested(true)}
                 className="group relative flex aspect-[16/10] w-full flex-col items-center justify-center gap-4 border border-gold/50 bg-white transition-colors hover:bg-sand"
               >
                 <span aria-hidden className="absolute inset-3 border border-hairline" />

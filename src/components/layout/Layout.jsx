@@ -3,6 +3,7 @@ import { Outlet, useLocation } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import FloatingBookNow from './FloatingBookNow';
+import CookieBanner from './CookieBanner';
 
 /** Scroll to top on route change, or to #hash targets (e.g. /contact#enquiry). */
 function ScrollManager() {
@@ -44,6 +45,7 @@ export default function Layout() {
       </main>
       <Footer />
       <FloatingBookNow />
+      <CookieBanner />
     </>
   );
 }

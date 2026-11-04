@@ -4,6 +4,7 @@ import LogoDivider from '../ui/LogoDivider';
 import { activeSocials } from '../ui/SocialIcons';
 import NewsletterForm from '../forms/NewsletterForm';
 import { NAV_LINKS } from '../../lib/nav';
+import { useConsent } from '../../lib/consent';
 import site from '../../content/site.json';
 
 function ColumnTitle({ children }) {
@@ -13,6 +14,7 @@ function ColumnTitle({ children }) {
 export default function Footer() {
   const year = new Date().getFullYear();
   const socials = activeSocials();
+  const { openSettings } = useConsent();
 
   return (
     // id is used by FloatingBookNow to hide itself once the footer is in view
@@ -87,9 +89,14 @@ export default function Footer() {
       <div className="bg-white">
         <div className="container-content flex flex-col items-center justify-between gap-2 py-5 text-xs text-taupe sm:flex-row">
           <p>© {year} Platinum Interior Design</p>
-          <Link to="/privacy" className="hover:text-gold-deep">
-            Privacy
-          </Link>
+          <div className="flex items-center gap-5">
+            <Link to="/privacy" className="hover:text-gold-deep">
+              Privacy
+            </Link>
+            <button type="button" onClick={openSettings} className="hover:text-gold-deep">
+              Cookie settings
+            </button>
+          </div>
         </div>
       </div>
     </footer>

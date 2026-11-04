@@ -40,6 +40,10 @@ export default {
           '60%': { transform: 'rotate(5deg) scale(1.04)' },
           '75%': { transform: 'rotate(-2deg)' },
         },
+        'cookie-in': {
+          '0%': { opacity: '0', transform: 'translateY(16px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
         settle: {
           '0%': { transform: 'scale(1.04)' },
           '100%': { transform: 'scale(1)' },

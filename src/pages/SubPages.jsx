@@ -7,6 +7,7 @@ import BookNowButton from '../components/ui/BookNowButton';
 import SectionHeading from '../components/ui/SectionHeading';
 import ProjectGrid from '../components/portfolio/ProjectGrid';
 import site from '../content/site.json';
+import { useConsent } from '../lib/consent';
 
 /* Skeleton pages — each will move into its own file as it is built out. */
 
@@ -50,6 +51,15 @@ export function ProjectDetail() {
 }
 
 
+function CookieSettingsButton() {
+  const { openSettings } = useConsent();
+  return (
+    <button type="button" onClick={openSettings} className="label text-gold-deep underline underline-offset-8 hover:text-gold">
+      Change cookie settings →
+    </button>
+  );
+}
+
 export function Privacy() {
   return (
     <>
@@ -65,6 +75,19 @@ export function Privacy() {
           <p>
             Conversations started with the “Book Us Now” button take place on WhatsApp and are handled by WhatsApp/Meta
             under their own terms and privacy policy.
+          </p>
+          <h2 className="pt-6 text-2xl">Cookies & third-party content</h2>
+          <p>
+            Our website does not use advertising or tracking cookies. Some pages include content from other services:
+            Google Maps on the Contact page and Facebook videos on the Home page. These services may set their own
+            cookies when they load.
+          </p>
+          <p>
+            When you first visit, we ask whether to load this content automatically (“Accept all”) or only when you
+            choose to (“Essential only”). Your choice is saved in your browser, and you can change it at any time:
+          </p>
+          <p>
+            <CookieSettingsButton />
           </p>
         </div>
       </section>

@@ -6,6 +6,7 @@ import Intro from '../components/home/Intro';
 import RecentWork from '../components/home/RecentWork';
 import FeaturedSpaces from '../components/home/FeaturedSpaces';
 import WhyChooseUs from '../components/home/WhyChooseUs';
+import Process from '../components/home/Process';
 
 /** Home — sections in order with the white / champagne rhythm from architecture §6. */
 export default function Home() {
@@ -17,7 +18,7 @@ export default function Home() {
       <FeaturedSpaces />
       <RecentWork />
       <WhyChooseUs />
-      <Placeholder bg="bg-white" title="Our Process" note="6.6 Process timeline" />
+      <Process bg="bg-white" />
       <Placeholder bg="bg-sand" title="Kind Words" note="6.7 Testimonials (hidden when empty)" />
       <CtaBand />
     </>
