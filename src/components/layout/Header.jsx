@@ -64,7 +64,7 @@ export default function Header() {
           {/* Desktop right: socials + Book Us Now */}
           <div className="hidden items-center gap-6 lg:flex">
             <SocialIcons
-              only={['instagram', 'facebook', 'pinterest']}
+              only={['instagram', 'facebook', 'whatsappChannel']}
               tone="gold"
               size="text-sm"
             />

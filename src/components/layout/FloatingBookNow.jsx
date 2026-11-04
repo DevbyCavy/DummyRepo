@@ -5,7 +5,7 @@ import BookNowButton from '../ui/BookNowButton';
 /**
  * Floating Book Us Now button (every page).
  * - Appears after the first scroll.
- * - Hides while the footer's Book Us Now button (#footer-book) is in view.
+ * - Hides once the footer (#site-footer) scrolls into view.
  */
 export default function FloatingBookNow() {
   const { pathname } = useLocation();
@@ -20,7 +20,7 @@ export default function FloatingBookNow() {
   }, []);
 
   useEffect(() => {
-    const target = document.getElementById('footer-book');
+    const target = document.getElementById('site-footer');
     if (!target) return;
     const io = new IntersectionObserver(([entry]) => setFooterVisible(entry.isIntersecting), {
       threshold: 0.1,

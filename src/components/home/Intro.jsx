@@ -25,6 +25,20 @@ export default function Intro() {
             From a single statement wall to a full home transformation, we handle design, sourcing and installation, so
             the journey is as effortless as the result.
           </p>
+          {site.slogan && (
+            <figure className="relative mt-10 border-l border-gold pl-6">
+              <span
+                aria-hidden
+                className="absolute -left-1 -top-6 select-none font-display text-6xl leading-none text-gold/40"
+              >
+                “
+              </span>
+              <blockquote className="font-display text-2xl font-light italic leading-snug text-espresso">
+                {site.slogan}
+              </blockquote>
+              <figcaption className="caption mt-3 text-gold-deep">— {site.name}</figcaption>
+            </figure>
+          )}
           <TextLink to="/about" className="mt-10">
             Discover Our Story
           </TextLink>

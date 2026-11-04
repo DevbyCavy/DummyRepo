@@ -8,11 +8,20 @@ import FloatingBookNow from './FloatingBookNow';
 function ScrollManager() {
   const { pathname, hash } = useLocation();
   useEffect(() => {
-    if (hash) {
-      const el = document.getElementById(hash.slice(1));
-      if (el) return el.scrollIntoView();
+    if (!hash) {
+      window.scrollTo(0, 0);
+      return;
     }
-    window.scrollTo(0, 0);
+    // Pages are lazy-loaded, so the target may not exist yet — poll briefly for it.
+    let frame;
+    const started = performance.now();
+    const tryScroll = () => {
+      const el = document.getElementById(decodeURIComponent(hash.slice(1)));
+      if (el) el.scrollIntoView();
+      else if (performance.now() - started < 2000) frame = requestAnimationFrame(tryScroll);
+    };
+    tryScroll();
+    return () => cancelAnimationFrame(frame);
   }, [pathname, hash]);
   return null;
 }

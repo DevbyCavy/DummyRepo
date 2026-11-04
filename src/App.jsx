@@ -7,9 +7,9 @@ import Home from './pages/Home';
 const sub = (name) => lazy(() => import('./pages/SubPages').then((m) => ({ default: m[name] })));
 const Portfolio = sub('Portfolio');
 const ProjectDetail = sub('ProjectDetail');
-const Services = sub('Services');
-const About = sub('About');
-const Contact = sub('Contact');
+const Services = lazy(() => import('./pages/Services'));
+const About = lazy(() => import('./pages/About'));
+const Contact = lazy(() => import('./pages/Contact'));
 const Privacy = sub('Privacy');
 const NotFound = sub('NotFound');
 

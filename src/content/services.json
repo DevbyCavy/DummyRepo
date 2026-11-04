@@ -1,0 +1,55 @@
+[
+  {
+    "slug": "interior-design",
+    "title": "Interior Design",
+    "image": "living-white-panelled",
+    "summary": "Complete interiors designed around the way you live, from the first sketch to the final styled reveal. We bring colour, light, texture and furniture together into one considered, timeless whole.",
+    "included": [
+      "In-depth design consultation",
+      "Concept and mood boards",
+      "Colour, materials and finishes palette",
+      "Lighting design",
+      "Furniture layout and selection",
+      "Final styling and reveal"
+    ]
+  },
+  {
+    "slug": "space-planning",
+    "title": "Space Planning",
+    "image": "kitchen-white-galley",
+    "summary": "Beautiful rooms start with a layout that works. We plan how every space flows and functions, so it feels open, practical and effortless to live in, whatever its size.",
+    "included": [
+      "Site visit and measurements",
+      "Layout and traffic-flow planning",
+      "Furniture placement plans",
+      "Storage and built-in solutions",
+      "Kitchen and joinery layouts"
+    ]
+  },
+  {
+    "slug": "furniture-decor-sourcing",
+    "title": "Furniture & Décor Sourcing",
+    "image": "living-tv-unit-shelving",
+    "summary": "The right pieces make a room. We source furniture, lighting, art and accessories from trusted suppliers and craftspeople, then manage ordering and delivery for you.",
+    "included": [
+      "Curated furniture and lighting selections",
+      "Art, accessories and soft furnishings",
+      "Custom and made-to-measure pieces",
+      "Supplier coordination and ordering",
+      "Delivery and placement"
+    ]
+  },
+  {
+    "slug": "renovation-styling",
+    "title": "Renovation & Styling",
+    "image": "kitchen-mirrored-wall-unit",
+    "summary": "From statement feature walls and custom joinery to full room makeovers, we manage the transformation and style the finished space so it is ready to enjoy.",
+    "included": [
+      "Feature walls, panelling and ceilings",
+      "Custom cabinetry and media units",
+      "Coordination of trades and installation",
+      "Project management from start to finish",
+      "Final styling and handover"
+    ]
+  }
+]

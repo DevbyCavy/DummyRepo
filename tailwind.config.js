@@ -12,8 +12,8 @@ export default {
         hairline: '#E9E0D2',
       },
       fontFamily: {
-        display: ['"Cormorant Garamond"', 'Georgia', 'serif'],
-        sans: ['Jost', 'system-ui', 'sans-serif'],
+        display: ['var(--font-display)', 'Georgia', 'serif'],
+        sans: ['var(--font-sans)', 'system-ui', 'sans-serif'],
       },
       letterSpacing: { luxe: '0.12em', label: '0.25em', wide3: '0.3em' },
       maxWidth: { content: '1280px', prose: '560px' },

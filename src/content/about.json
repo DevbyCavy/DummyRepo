@@ -1,0 +1,44 @@
+{
+  "_note": "Draft copy — the client can replace any of this. TODO(open): founding year, founder name and real story details.",
+  "story": {
+    "eyebrow": "Our Story",
+    "title": "Creating Spaces That Inspire",
+    "paragraphs": [
+      "Platinum Interior Design was founded on a simple belief: the spaces we live and work in shape how we feel every single day. A well-designed room does more than look beautiful. It brings calm, confidence and joy to everyday life.",
+      "Based in Harare, Zimbabwe, we design homes and businesses that feel bright, refined and unmistakably personal. From statement media walls and elegant panelled lounges to kitchens built around family life, every project is shaped around the people who will use it.",
+      "We guide our clients through every step, from the first conversation to the final styled reveal, so the journey feels as effortless as the finished space."
+    ],
+    "images": ["hallway-gallery", "kitchen-mirrored-wall-unit"]
+  },
+  "philosophy": {
+    "eyebrow": "Our Philosophy",
+    "quote": "Luxury isn’t about excess. It’s about getting every detail right, so a space feels effortless, timeless and entirely yours.",
+    "attribution": "Platinum Interior Design"
+  },
+  "values": {
+    "eyebrow": "What Guides Us",
+    "title": "Our Values",
+    "items": [
+      {
+        "title": "Craftsmanship",
+        "text": "We care about the details others overlook, from the finish on a cabinet door to the warmth of a light."
+      },
+      {
+        "title": "Integrity",
+        "text": "Honest advice, clear communication and quotes you can trust. We only promise what we can deliver."
+      },
+      {
+        "title": "Collaboration",
+        "text": "Your home, your vision. We listen first and design with you, not just for you."
+      },
+      {
+        "title": "Timeless Design",
+        "text": "We create spaces that feel fresh today and still feel right years from now, beyond passing trends."
+      }
+    ]
+  },
+  "team": {
+    "eyebrow": "The People Behind the Spaces",
+    "title": "Meet the Team"
+  }
+}

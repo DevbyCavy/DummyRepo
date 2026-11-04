@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import Logo from '../ui/Logo';
 import LogoDivider from '../ui/LogoDivider';
-import BookNowButton from '../ui/BookNowButton';
 import { activeSocials } from '../ui/SocialIcons';
 import NewsletterForm from '../forms/NewsletterForm';
 import { NAV_LINKS } from '../../lib/nav';
@@ -16,15 +15,12 @@ export default function Footer() {
   const socials = activeSocials();
 
   return (
-    <footer className="border-t-2 border-gold bg-sand">
+    // id is used by FloatingBookNow to hide itself once the footer is in view
+    <footer id="site-footer" className="border-t-2 border-gold bg-sand">
       {/* Brand block */}
       <div className="container-content flex flex-col items-center gap-6 pb-14 pt-20 text-center">
         <Logo />
         <LogoDivider label={site.tagline} />
-        {/* id is used by FloatingBookNow to hide itself when this button is visible */}
-        <div id="footer-book" className="mt-4">
-          <BookNowButton size="lg" placement="footer" />
-        </div>
       </div>
 
       {/* Columns */}

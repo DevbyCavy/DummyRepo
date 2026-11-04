@@ -5,6 +5,7 @@ import CtaBand from '../components/home/CtaBand';
 import Intro from '../components/home/Intro';
 import RecentWork from '../components/home/RecentWork';
 import FeaturedSpaces from '../components/home/FeaturedSpaces';
+import WhyChooseUs from '../components/home/WhyChooseUs';
 
 /** Home — sections in order with the white / champagne rhythm from architecture §6. */
 export default function Home() {
@@ -15,7 +16,7 @@ export default function Home() {
       <Intro />
       <FeaturedSpaces />
       <RecentWork />
-      <Placeholder bg="bg-champagne" title="What We Do" note="6.5 Services preview" />
+      <WhyChooseUs />
       <Placeholder bg="bg-white" title="Our Process" note="6.6 Process timeline" />
       <Placeholder bg="bg-sand" title="Kind Words" note="6.7 Testimonials (hidden when empty)" />
       <CtaBand />

@@ -1,15 +1,19 @@
-@import '@fontsource/cormorant-garamond/300.css';
-@import '@fontsource/cormorant-garamond/400.css';
-@import '@fontsource/cormorant-garamond/300-italic.css';
-@import '@fontsource/jost/300.css';
-@import '@fontsource/jost/400.css';
-@import '@fontsource/jost/500.css';
+@import '@fontsource/bodoni-moda/400.css';
+@import '@fontsource/bodoni-moda/400-italic.css';
+@import '@fontsource/manrope/300.css';
+@import '@fontsource/manrope/400.css';
+@import '@fontsource/manrope/500.css';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+  /* Font roles — swap the families here (see tailwind.config.js fontFamily). */
+  :root {
+    --font-display: 'Bodoni Moda';
+    --font-sans: 'Manrope';
+  }
   html { scroll-behavior: smooth; }
   body { @apply font-sans font-light text-espresso bg-white; line-height: 1.75; }
   h1, h2, h3 { @apply font-display font-light uppercase tracking-luxe; line-height: 1.15; }

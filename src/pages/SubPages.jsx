@@ -4,6 +4,8 @@ import PageHero from '../components/layout/PageHero';
 import Placeholder from '../components/ui/Placeholder';
 import CtaBand from '../components/home/CtaBand';
 import BookNowButton from '../components/ui/BookNowButton';
+import SectionHeading from '../components/ui/SectionHeading';
+import ProjectGrid from '../components/portfolio/ProjectGrid';
 import site from '../content/site.json';
 
 /* Skeleton pages — each will move into its own file as it is built out. */
@@ -13,7 +15,15 @@ export function Portfolio() {
     <>
       <Seo title="Portfolio" description="Residential, commercial and hospitality interiors by Platinum Interior Design." />
       <PageHero title="Portfolio" eyebrow="Our Work" crumbs={[]} />
-      <Placeholder title="All Projects" note="7.1 Filter bar + masonry grid" />
+      <section className="section">
+        <div className="container-content">
+          <SectionHeading title="All Projects" divider />
+          <div className="mt-16">
+            <ProjectGrid placement="portfolio" />
+          </div>
+        </div>
+      </section>
+      <CtaBand />
     </>
   );
 }
@@ -39,50 +49,6 @@ export function ProjectDetail() {
   );
 }
 
-export function Services() {
-  return (
-    <>
-      <Seo title="Services" description="Interior design, space planning, sourcing and renovation in Harare." />
-      <PageHero title="Services" eyebrow="What We Do" />
-      <Placeholder title="Our Services" note="7.3 Service blocks, process, FAQ" />
-      <CtaBand />
-    </>
-  );
-}
-
-export function About() {
-  return (
-    <>
-      <Seo title="About" description="The story and philosophy behind Platinum Interior Design." />
-      <PageHero title="About" eyebrow="Our Studio" />
-      <Placeholder title="Our Story" note="7.4 Story, philosophy, values, team" />
-      <CtaBand />
-    </>
-  );
-}
-
-export function Contact() {
-  return (
-    <>
-      <Seo title="Contact" description="Book Platinum Interior Design on WhatsApp, or send us an email enquiry." />
-      <PageHero title="Contact" eyebrow="Get In Touch" />
-      <section className="section">
-        <div className="container-content">
-          <div className="mx-auto flex max-w-2xl flex-col items-center border border-gold bg-champagne px-6 py-16 text-center">
-            <h2 className="h2">Book Us Now</h2>
-            <p className="mt-4">The quickest way to reach us is WhatsApp.</p>
-            <BookNowButton size="lg" label="Chat on WhatsApp" placement="contact" className="mt-8" />
-            {/* TODO(open): company WhatsApp number */}
-            <p className="caption mt-5">{site.whatsappDisplay}</p>
-          </div>
-        </div>
-      </section>
-      <div id="enquiry">
-        <Placeholder bg="bg-white" eyebrow="Prefer email?" title="Send an Enquiry" note="7.5 Enquiry form + studio details + map" />
-      </div>
-    </>
-  );
-}
 
 export function Privacy() {
   return (

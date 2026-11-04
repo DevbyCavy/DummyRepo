@@ -1,0 +1,37 @@
+{
+  "eyebrow": "Why Platinum",
+  "title": "Why Choose Us",
+  "intro": "We design spaces that look beautiful, work effortlessly and feel unmistakably yours, and we make the journey just as enjoyable as the result.",
+  "items": [
+    {
+      "icon": "Fingerprint",
+      "title": "Designed Around You",
+      "text": "Every space begins with listening. We shape each design around your lifestyle, your taste and the way you use your space, so nothing feels off-the-shelf."
+    },
+    {
+      "icon": "Gem",
+      "title": "Attention to Every Detail",
+      "text": "From the layout to the last cushion, we obsess over the finishes, textures and lighting that turn a room into an experience."
+    },
+    {
+      "icon": "Layers",
+      "title": "Concept to Completion",
+      "text": "Design, sourcing, coordination and installation are all handled by one dedicated team. You enjoy the process; we manage the rest."
+    },
+    {
+      "icon": "Armchair",
+      "title": "Curated, Quality Materials",
+      "text": "We work with trusted suppliers and craftspeople to source furniture and finishes that are made to last and chosen to impress."
+    },
+    {
+      "icon": "CalendarCheck",
+      "title": "On Time, On Budget",
+      "text": "Clear quotes, honest timelines and regular updates. No surprises, just a smooth journey to the space you imagined."
+    },
+    {
+      "icon": "MessageCircle",
+      "title": "Always a Message Away",
+      "text": "Questions, ideas or updates? Reach us directly on WhatsApp and get quick, personal responses from our team."
+    }
+  ]
+}

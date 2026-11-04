@@ -1,7 +1,7 @@
 import {
   FaInstagram,
   FaFacebookF,
-  FaPinterestP,
+  FaWhatsapp,
   FaTiktok,
   FaLinkedinIn,
   FaHouzz,
@@ -11,7 +11,7 @@ import site from '../../content/site.json';
 export const SOCIALS = [
   { key: 'instagram', label: 'Instagram', Icon: FaInstagram },
   { key: 'facebook', label: 'Facebook', Icon: FaFacebookF },
-  { key: 'pinterest', label: 'Pinterest', Icon: FaPinterestP },
+  { key: 'whatsappChannel', label: 'WhatsApp Channel', Icon: FaWhatsapp },
   { key: 'tiktok', label: 'TikTok', Icon: FaTiktok },
   { key: 'linkedin', label: 'LinkedIn', Icon: FaLinkedinIn },
   { key: 'houzz', label: 'Houzz', Icon: FaHouzz },
