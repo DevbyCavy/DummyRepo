@@ -16,29 +16,24 @@ export default function Header() {
   // Close the mobile menu whenever the route changes.
   useEffect(() => setMenuOpen(false), [pathname]);
 
-  // Transparent over the home hero until the visitor scrolls 80px.
-  const transparent = isHome && !scrolled && !menuOpen;
+  // Home: full-width and transparent over the hero until the visitor scrolls 80px.
+  // Otherwise (scrolled, sub-pages, menu open): a floating white pill bar.
+  const floating = !(isHome && !scrolled) || menuOpen;
 
-  const shell = transparent
-    ? 'bg-transparent border-transparent'
-    : 'bg-white/95 backdrop-blur-sm border-hairline';
-  const linkColor = transparent ? 'text-white' : 'text-espresso';
+  const bar = floating
+    ? 'mt-3 h-16 max-w-[1180px] rounded-full border-hairline bg-white/95 px-5 shadow-[0_10px_30px_rgba(43,37,32,0.10)] backdrop-blur-md md:mt-4 md:px-8'
+    : 'mt-0 h-20 max-w-content border-transparent bg-transparent px-6 md:px-10 lg:h-24';
+  const linkColor = 'text-espresso';
 
   return (
     <>
-      <header
-        className={`fixed inset-x-0 top-0 z-50 border-b transition-colors duration-500 ${shell}`}
-      >
-        {/* Light top fade keeps white text legible over bright hero images */}
-        {transparent && (
-          <div
-            aria-hidden
-            className="pointer-events-none absolute inset-0 -z-10 h-40 bg-gradient-to-b from-black/35 to-transparent"
+      <header className="fixed inset-x-0 top-0 z-50 px-3 md:px-6">
+        <div
+          className={`mx-auto flex w-full items-center justify-between gap-6 border transition-all duration-500 ease-out ${bar}`}
+        >
+          <Logo
+            className={`shrink-0 origin-left transition-transform duration-500 ${floating ? 'scale-[0.85]' : 'scale-100'}`}
           />
-        )}
-
-        <div className="container-content flex h-20 items-center justify-between gap-6 lg:h-24">
-          <Logo tone={transparent ? 'white' : 'gold'} className="shrink-0" />
 
           {/* Desktop navigation */}
           <nav aria-label="Main" className="hidden lg:block">
@@ -70,15 +65,23 @@ export default function Header() {
           <div className="hidden items-center gap-6 lg:flex">
             <SocialIcons
               only={['instagram', 'facebook', 'pinterest']}
-              tone={transparent ? 'white' : 'gold'}
+              tone="gold"
               size="text-sm"
             />
-            <BookNowButton size="sm" placement="header" />
+            <BookNowButton
+              size="sm"
+              placement="header"
+              className={`transition-[border-radius] duration-500 ${floating ? 'rounded-full' : 'rounded-none'}`}
+            />
           </div>
 
           {/* Mobile right: WhatsApp icon + hamburger */}
           <div className="flex items-center gap-3 lg:hidden">
-            <BookNowButton variant="icon" placement="header-mobile" />
+            <BookNowButton
+              variant="icon"
+              placement="header-mobile"
+              className={floating ? 'rounded-full' : 'rounded-none'}
+            />
             <button
               type="button"
               onClick={() => setMenuOpen((o) => !o)}
@@ -90,14 +93,14 @@ export default function Header() {
               <span className="sr-only">{menuOpen ? 'Close menu' : 'Open menu'}</span>
               <span aria-hidden className="relative block h-3 w-7">
                 <span
-                  className={`absolute left-0 h-px w-full transition-all duration-300 ${
-                    transparent ? 'bg-white' : 'bg-gold'
-                  } ${menuOpen ? 'top-1.5 rotate-45' : 'top-0'}`}
+                  className={`absolute left-0 h-px w-full bg-gold transition-all duration-300 ${
+                    menuOpen ? 'top-1.5 rotate-45' : 'top-0'
+                  }`}
                 />
                 <span
-                  className={`absolute left-0 h-px w-full transition-all duration-300 ${
-                    transparent ? 'bg-white' : 'bg-gold'
-                  } ${menuOpen ? 'top-1.5 -rotate-45' : 'top-3'}`}
+                  className={`absolute left-0 h-px w-full bg-gold transition-all duration-300 ${
+                    menuOpen ? 'top-1.5 -rotate-45' : 'top-3'
+                  }`}
                 />
               </span>
             </button>

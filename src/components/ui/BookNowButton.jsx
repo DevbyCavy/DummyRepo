@@ -19,13 +19,19 @@ export default function BookNowButton({
   ...rest
 }) {
   const isIcon = variant === 'icon';
+  // Hover: lift + soft gold glow; icon "rings"; sheen sweeps across (see .sheen in index.css).
+  const hover =
+    'group hover:-translate-y-0.5 hover:shadow-[0_12px_28px_-6px_rgba(160,120,64,0.45)] active:translate-y-0 active:shadow-none';
   const cls = isIcon
-    ? `sheen inline-flex h-10 w-10 items-center justify-center bg-gold-gradient text-espresso transition hover:bg-gold-gradient-deep ${className}`
-    : buttonClass({ variant, size, className });
+    ? `sheen inline-flex h-10 w-10 items-center justify-center bg-gold-gradient text-espresso transition-all duration-300 hover:bg-gold-gradient-deep ${hover} ${className}`
+    : buttonClass({ variant, size, className: `${hover} ${className}` });
 
   const content = (
     <>
-      <FaWhatsapp aria-hidden className={isIcon ? 'text-xl' : 'text-[1.15em]'} />
+      <FaWhatsapp
+        aria-hidden
+        className={`${isIcon ? 'text-xl' : 'text-[1.15em]'} origin-center group-hover:animate-ring`}
+      />
       {!isIcon && <span>{label}</span>}
     </>
   );

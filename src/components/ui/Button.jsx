@@ -5,6 +5,7 @@ const base =
 
 const sizes = {
   sm: 'px-5 py-2.5 text-[0.7rem]',
+  body: 'px-6 py-3 text-[0.8125rem]', // matches 13px body copy (hero)
   md: 'px-7 py-3.5 text-xs',
   lg: 'px-9 py-4 text-[0.8125rem]',
 };

@@ -9,8 +9,6 @@ const Portfolio = sub('Portfolio');
 const ProjectDetail = sub('ProjectDetail');
 const Services = sub('Services');
 const About = sub('About');
-const Journal = sub('Journal');
-const JournalPost = sub('JournalPost');
 const Contact = sub('Contact');
 const Privacy = sub('Privacy');
 const NotFound = sub('NotFound');
@@ -24,8 +22,6 @@ export default function App() {
         <Route path="portfolio/:slug" element={<ProjectDetail />} />
         <Route path="services" element={<Services />} />
         <Route path="about" element={<About />} />
-        <Route path="journal" element={<Journal />} />
-        <Route path="journal/:slug" element={<JournalPost />} />
         <Route path="contact" element={<Contact />} />
         <Route path="privacy" element={<Privacy />} />
         <Route path="*" element={<NotFound />} />

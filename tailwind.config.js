@@ -28,12 +28,31 @@ export default {
           '0%': { boxShadow: '0 0 0 0 rgba(194,149,90,0.55)' },
           '25%, 100%': { boxShadow: '0 0 0 18px rgba(194,149,90,0)' },
         },
+        'scrollcue-x': {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(200%)' },
+        },
+        ring: {
+          '0%, 100%': { transform: 'rotate(0deg) scale(1)' },
+          '15%': { transform: 'rotate(-14deg) scale(1.12)' },
+          '30%': { transform: 'rotate(12deg) scale(1.12)' },
+          '45%': { transform: 'rotate(-8deg) scale(1.08)' },
+          '60%': { transform: 'rotate(5deg) scale(1.04)' },
+          '75%': { transform: 'rotate(-2deg)' },
+        },
+        settle: {
+          '0%': { transform: 'scale(1.04)' },
+          '100%': { transform: 'scale(1)' },
+        },
         scrollcue: {
           '0%': { transform: 'translateY(-100%)' },
           '100%': { transform: 'translateY(200%)' },
         },
       },
-      animation: { 'gold-pulse': 'gold-pulse 6s ease-out 3' },
+      animation: {
+        'gold-pulse': 'gold-pulse 6s ease-out 3',
+        ring: 'ring 0.8s ease-in-out',
+      },
     },
   },
   plugins: [],

@@ -1,0 +1,54 @@
+{
+  "hallway-gallery": {
+    "width": 941,
+    "height": 1672,
+    "widths": [
+      480,
+      941
+    ]
+  },
+  "kitchen-mirrored-wall-unit": {
+    "width": 941,
+    "height": 1672,
+    "widths": [
+      480,
+      941
+    ]
+  },
+  "kitchen-white-galley": {
+    "width": 680,
+    "height": 906,
+    "widths": [
+      480,
+      680
+    ]
+  },
+  "living-tv-unit-shelving": {
+    "width": 1257,
+    "height": 905,
+    "widths": [
+      480,
+      960,
+      1257
+    ]
+  },
+  "living-tv-wall-led": {
+    "width": 1672,
+    "height": 941,
+    "widths": [
+      480,
+      960,
+      1600,
+      1672
+    ]
+  },
+  "living-white-panelled": {
+    "width": 1156,
+    "height": 1360,
+    "widths": [
+      480,
+      960,
+      1156
+    ]
+  }
+}

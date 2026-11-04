@@ -61,28 +61,6 @@ export function About() {
   );
 }
 
-export function Journal() {
-  return (
-    <>
-      <Seo title="Journal" />
-      <PageHero title="Journal" eyebrow="News & Ideas" />
-      <Placeholder title="Latest" note="Journal list (optional for v1)" />
-    </>
-  );
-}
-
-export function JournalPost() {
-  const { slug } = useParams();
-  const title = slug.replace(/-/g, ' ');
-  return (
-    <>
-      <Seo title={title} />
-      <PageHero title={title} crumbs={[{ to: '/journal', label: 'Journal' }]} />
-      <Placeholder title="Article" />
-    </>
-  );
-}
-
 export function Contact() {
   return (
     <>

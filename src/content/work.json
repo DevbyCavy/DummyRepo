@@ -1,0 +1,50 @@
+[
+  {
+    "image": "living-tv-wall-led",
+    "title": "Panelled Media Wall",
+    "category": "Living Rooms",
+    "alt": "Living room media wall with framed wall panels, vertical LED light strips and a floating grey TV console with warm under-glow lighting on a marble floor",
+    "hero": true,
+    "focus": "50% 45%"
+  },
+  {
+    "image": "living-white-panelled",
+    "title": "White Panelled Lounge",
+    "category": "Living Rooms",
+    "alt": "Bright white lounge with classic wall mouldings, glowing gold wall sconces, a crystal chandelier, cove-lit ceiling and polished marble floor tiles",
+    "hero": false,
+    "focus": "50% 40%"
+  },
+  {
+    "image": "living-tv-unit-shelving",
+    "title": "Backlit TV Unit & Shelving",
+    "category": "Living Rooms",
+    "alt": "Bespoke TV unit with wood slat panels, warm backlighting, open display shelving and a walnut-finish low cabinet",
+    "hero": false,
+    "focus": "50% 40%"
+  },
+  {
+    "image": "hallway-gallery",
+    "title": "Gallery Hallway",
+    "category": "Hallways",
+    "alt": "White panelled hallway with gold swing-arm wall lamps and framed photographs leading to a mirrored end wall",
+    "focus": "50% 40%",
+    "hero": false
+  },
+  {
+    "image": "kitchen-mirrored-wall-unit",
+    "title": "Mirrored Kitchen Wall",
+    "category": "Kitchens & Dining",
+    "alt": "Floor-to-ceiling kitchen wall unit with smoked mirrored glass doors, built-in ovens and a slim open wooden shelf",
+    "focus": "50% 40%",
+    "hero": false
+  },
+  {
+    "image": "kitchen-white-galley",
+    "title": "White Galley Kitchen",
+    "category": "Kitchens & Dining",
+    "alt": "White galley kitchen with marble-look countertops, stainless steel sinks, bar handles and glossy cream floor tiles",
+    "focus": "50% 50%",
+    "hero": false
+  }
+]

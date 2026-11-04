@@ -30,8 +30,8 @@
   .sheen { position: relative; overflow: hidden; isolation: isolate; }
   .sheen::after {
     content: ''; position: absolute; inset: 0; z-index: -1;
-    background: linear-gradient(115deg, transparent 30%, rgba(255,255,255,0.15) 50%, transparent 70%);
-    transform: translateX(-120%); transition: transform 1.2s ease;
+    background: linear-gradient(115deg, transparent 30%, rgba(255,255,255,0.3) 50%, transparent 70%);
+    transform: translateX(-120%); transition: transform 0.9s ease;
   }
   .sheen:hover::after { transform: translateX(120%); }
 }
