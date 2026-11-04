@@ -1,5 +1,5 @@
 import Seo from '../components/ui/Seo';
-import Placeholder from '../components/ui/Placeholder';
+import Testimonials from '../components/home/Testimonials';
 import Hero from '../components/home/Hero';
 import CtaBand from '../components/home/CtaBand';
 import Intro from '../components/home/Intro';
@@ -19,7 +19,7 @@ export default function Home() {
       <RecentWork />
       <WhyChooseUs />
       <Process bg="bg-white" />
-      <Placeholder bg="bg-sand" title="Kind Words" note="6.7 Testimonials (hidden when empty)" />
+      <Testimonials />
       <CtaBand />
     </>
   );
