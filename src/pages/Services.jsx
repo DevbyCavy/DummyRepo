@@ -4,6 +4,8 @@ import Eyebrow from '../components/ui/Eyebrow';
 import SectionHeading from '../components/ui/SectionHeading';
 import BookNowButton from '../components/ui/BookNowButton';
 import ResponsiveImage from '../components/ui/ResponsiveImage';
+import TextLink from '../components/ui/TextLink';
+import { categoryByTitle } from '../lib/catalogue';
 import Accordion from '../components/ui/Accordion';
 import Process from '../components/home/Process';
 import CtaBand from '../components/home/CtaBand';
@@ -24,7 +26,7 @@ export default function Services() {
         title="Services"
         description="Interior design, space planning, furniture and décor sourcing, and renovation and styling in Harare, Zimbabwe."
       />
-      <PageHero title="Services" eyebrow="What We Do" />
+      <PageHero title="Services" eyebrow="What We Do" image="wardrobe-glass-door" />
 
       {/* Intro */}
       <section className="bg-white pt-20 md:pt-28">
@@ -85,6 +87,19 @@ export default function Services() {
                     </li>
                   ))}
                 </ul>
+
+                {s.categories?.length > 0 && (
+                  <>
+                    <p className="label mt-10 text-gold-deep">See examples</p>
+                    <div className="mt-4 flex flex-wrap gap-x-8 gap-y-3">
+                      {s.categories.map(categoryByTitle).filter(Boolean).map((c) => (
+                        <TextLink key={c.slug} to={c.href}>
+                          {c.title}
+                        </TextLink>
+                      ))}
+                    </div>
+                  </>
+                )}
               </div>
             </div>
           </section>

@@ -26,7 +26,7 @@
   {
     "image": "hallway-gallery",
     "title": "Gallery Hallway",
-    "category": "Hallways",
+    "category": "Wall Panelling",
     "alt": "White panelled hallway with gold swing-arm wall lamps and framed photographs leading to a mirrored end wall",
     "focus": "50% 40%",
     "hero": false
@@ -45,6 +45,398 @@
     "category": "Kitchens & Dining",
     "alt": "White galley kitchen with marble-look countertops, stainless steel sinks, bar handles and glossy cream floor tiles",
     "focus": "50% 75%",
+    "hero": false
+  },
+  {
+    "image": "living-backlit-stone-tv-wall",
+    "title": "Backlit Stone TV Wall",
+    "category": "Living Rooms",
+    "alt": "Media wall with a split-face stone feature panel, a backlit floating TV surround, a long timber console and track lighting above",
+    "focus": "50% 50%",
+    "hero": false
+  },
+  {
+    "image": "living-floating-tv-console",
+    "title": "Floating TV Console",
+    "category": "Living Rooms",
+    "alt": "Minimal cream lounge with a wall-mounted TV, a white floating console with warm under-glow and two black pendant lights",
+    "focus": "50% 45%",
+    "hero": false
+  },
+  {
+    "image": "living-stone-feature-tv-wall",
+    "title": "Stone Feature TV Wall",
+    "category": "Living Rooms",
+    "alt": "White panelled TV wall framed by textured stone inlays above and below, with a low timber-look console and coffee table",
+    "focus": "50% 50%",
+    "hero": false
+  },
+  {
+    "image": "living-white-tv-lounge",
+    "title": "White TV Lounge",
+    "category": "Living Rooms",
+    "alt": "Bright white lounge with panel mouldings, a grey floating TV console, a ring chandelier, a grey sectional sofa and a framed lion portrait",
+    "focus": "50% 50%",
+    "hero": false
+  },
+  {
+    "image": "living-home-cinema",
+    "title": "Home Cinema",
+    "category": "Living Rooms",
+    "alt": "Private home cinema with tiered grey leather recliners, timber slat wall panels with LED strips and a large projection screen",
+    "focus": "50% 50%",
+    "hero": false
+  },
+  {
+    "image": "living-leather-corner-sofa",
+    "title": "Leather Corner Sofa",
+    "category": "Living Rooms",
+    "alt": "Tan leather corner sofa with patterned cushions and a knitted throw around a round brass coffee table on a cowhide rug",
+    "focus": "50% 40%",
+    "hero": false
+  },
+  {
+    "image": "living-leather-lounge",
+    "title": "Leather Lounge",
+    "category": "Living Rooms",
+    "alt": "Brown leather sectional and ottoman with framed black-and-white art, a floor lamp and green plants in a warm neutral lounge",
+    "focus": "50% 55%",
+    "hero": false
+  },
+  {
+    "image": "living-leather-suite",
+    "title": "Leather Suite",
+    "category": "Living Rooms",
+    "alt": "Tan leather sofa, armchairs and footstool arranged on a zebra-print rug in front of a dark patterned feature wall",
+    "focus": "50% 50%",
+    "hero": false
+  },
+  {
+    "image": "living-recliner-lounge",
+    "title": "Recliner Lounge",
+    "category": "Living Rooms",
+    "alt": "Cognac leather recliner suite around a glass coffee table, with white wall panelling, lit display niches and a gold sputnik chandelier",
+    "focus": "50% 50%",
+    "hero": false
+  },
+  {
+    "image": "bedroom-carved-tufted-bed",
+    "title": "Carved Tufted Bed",
+    "category": "Bedrooms",
+    "alt": "Classic king bed with a carved dark wood frame and cream button-tufted leather headboard and footboard, flanked by bedside lamps",
+    "focus": "50% 50%",
+    "hero": false
+  },
+  {
+    "image": "bedroom-panelled-headboard-wall",
+    "title": "Panelled Headboard Wall",
+    "category": "Bedrooms",
+    "alt": "Modern bedroom with a full-width dark upholstered headboard wall, a concealed LED cove ceiling and a matching grey bed and side unit",
+    "focus": "50% 50%",
+    "hero": false
+  },
+  {
+    "image": "bedroom-kids-arched-headboard",
+    "title": "Kids’ Arched Headboard",
+    "category": "Bedrooms",
+    "alt": "Blush-pink child’s bedroom with a backlit arched channel-tufted headboard topped with bunny ears and a bow",
+    "focus": "50% 45%",
+    "hero": false
+  },
+  {
+    "image": "bedroom-storage-base-bed",
+    "title": "Storage Base Bed",
+    "category": "Bedrooms",
+    "alt": "White upholstered double bed with twin padded headboards and pull-out storage drawers built into the base",
+    "focus": "50% 50%",
+    "hero": false
+  },
+  {
+    "image": "bedroom-pillow-top-mattress",
+    "title": "Pillow-Top Mattress",
+    "category": "Bedrooms",
+    "alt": "Quilted white pillow-top mattress with blue piped borders",
+    "focus": "50% 50%",
+    "hero": false
+  },
+  {
+    "image": "wardrobe-oak-walk-in",
+    "title": "Oak Walk-in Wardrobe",
+    "category": "Wardrobes",
+    "alt": "Walk-in wardrobe in oak and white with LED-lit hanging rails, open shelving, a central lit ladder shelf and a chest of drawers",
+    "focus": "50% 50%",
+    "hero": false
+  },
+  {
+    "image": "wardrobe-open-oak",
+    "title": "Open Oak Wardrobe",
+    "category": "Wardrobes",
+    "alt": "Open oak wardrobe with backlit shelving, hanging space and a white drawer unit beneath a window",
+    "focus": "50% 50%",
+    "hero": false
+  },
+  {
+    "image": "wardrobe-backlit-walk-in",
+    "title": "Backlit Walk-in Closet",
+    "category": "Wardrobes",
+    "alt": "Close view of an oak walk-in closet with vertical LED strip lighting, hanging rails and white drawers",
+    "focus": "60% 50%",
+    "hero": false
+  },
+  {
+    "image": "wardrobe-glass-door",
+    "title": "Glass-Door Wardrobe",
+    "category": "Wardrobes",
+    "alt": "Wall of wardrobes with tall black-framed tinted glass doors, warm interior lighting and white handleless drawers",
+    "focus": "40% 50%",
+    "hero": false
+  },
+  {
+    "image": "kitchen-glass-display-unit",
+    "title": "Glass Display Unit",
+    "category": "Kitchens & Dining",
+    "alt": "White kitchen with a tall black glass-fronted display unit lit from within, beside handleless white base cabinets",
+    "focus": "55% 50%",
+    "hero": false
+  },
+  {
+    "image": "entry-arched-mirror-console",
+    "title": "Arched Mirror & Console",
+    "category": "Entryways",
+    "alt": "Entryway with a black arched mirror, black wall sconces and a two-tier black console styled with a brass vase, books and a basket",
+    "focus": "50% 45%",
+    "hero": false
+  },
+  {
+    "image": "entry-gold-arched-mirror",
+    "title": "Gold Arched Mirror",
+    "category": "Entryways",
+    "alt": "Panelled entry with a gold-framed arched mirror, brass sconces and a black sideboard styled with blossom stems and candles",
+    "focus": "50% 45%",
+    "hero": false
+  },
+  {
+    "image": "entry-floating-console-mirror",
+    "title": "Floating Console & Mirror",
+    "category": "Entryways",
+    "alt": "Round mirror over a floating oak and white console with an open niche, beside a timber slat panel",
+    "focus": "50% 50%",
+    "hero": false
+  },
+  {
+    "image": "entry-slat-mirror-cabinet",
+    "title": "Slat Panel & Cabinet",
+    "category": "Entryways",
+    "alt": "Hallway nook with an oak slat wall panel, a round black-framed mirror and a white floating cabinet styled with dried grasses",
+    "focus": "50% 50%",
+    "hero": false
+  },
+  {
+    "image": "entry-slat-mirror-shelf",
+    "title": "Slat Panel & Shelf",
+    "category": "Entryways",
+    "alt": "Round black mirror over a black floating shelf against a vertical oak slat panel, styled with a vase of blossom",
+    "focus": "60% 50%",
+    "hero": false
+  },
+  {
+    "image": "entry-slat-panel-mirror",
+    "title": "Slat Panel Mirror",
+    "category": "Entryways",
+    "alt": "Narrow entry with a floor-to-ceiling oak slat panel, a round mirror and a white wall cabinet with a framed photo",
+    "focus": "50% 50%",
+    "hero": false
+  },
+  {
+    "image": "mirror-window-pane-lounge",
+    "title": "Window-Pane Mirror Lounge",
+    "category": "Feature Mirrors",
+    "alt": "Large black window-pane mirror on a lounge wall behind a white tufted sofa and a tall potted plant",
+    "focus": "50% 50%",
+    "hero": false
+  },
+  {
+    "image": "mirror-window-pane-entry",
+    "title": "Window-Pane Mirror Entry",
+    "category": "Feature Mirrors",
+    "alt": "Black-framed window-pane mirror on an entry wall reflecting a living room, with a potted plant on the floor",
+    "focus": "50% 50%",
+    "hero": false
+  },
+  {
+    "image": "mirror-grid-dining",
+    "title": "Dining Mirror Grid",
+    "category": "Feature Mirrors",
+    "alt": "Grid of twelve black-framed square mirrors above a radiator, reflecting a dining table and pendant lights",
+    "focus": "50% 50%",
+    "hero": false
+  },
+  {
+    "image": "mirror-grid-console",
+    "title": "Mirror Grid & Console",
+    "category": "Feature Mirrors",
+    "alt": "Arrangement of black square mirrors above a concrete-look sideboard styled with black and silver vases",
+    "focus": "50% 50%",
+    "hero": false
+  },
+  {
+    "image": "mirror-four-panel",
+    "title": "Four-Panel Mirror",
+    "category": "Feature Mirrors",
+    "alt": "Four tall black-framed mirrors arranged in a square on a white wall above a woven basket",
+    "focus": "50% 50%",
+    "hero": false
+  },
+  {
+    "image": "mirror-tall-hallway",
+    "title": "Tall Hallway Mirror",
+    "category": "Feature Mirrors",
+    "alt": "Tall black-framed six-panel mirror leaning in a hallway beside a large potted palm on a timber floor",
+    "focus": "50% 50%",
+    "hero": false
+  },
+  {
+    "image": "panelling-gallery-hallway",
+    "title": "Gallery Panelled Hallway",
+    "category": "Wall Panelling",
+    "alt": "Long hallway with white panel mouldings, brass wall sconces, framed black-and-white photographs and a black leather bench",
+    "focus": "50% 55%",
+    "hero": false
+  },
+  {
+    "image": "panelling-lit-hallway",
+    "title": "Lit Panelled Hallway",
+    "category": "Wall Panelling",
+    "alt": "Panelled corridor with slim black linear wall lights, a cove-lit ceiling and a grey marble floor",
+    "focus": "50% 50%",
+    "hero": false
+  },
+  {
+    "image": "panelling-long-corridor",
+    "title": "Long Panelled Corridor",
+    "category": "Wall Panelling",
+    "alt": "Long corridor freshly finished with white raised panel mouldings and a glossy grey tiled floor",
+    "focus": "50% 50%",
+    "hero": false
+  },
+  {
+    "image": "panelling-white-room",
+    "title": "White Panelled Room",
+    "category": "Wall Panelling",
+    "alt": "All-white room with floor-to-ceiling panel mouldings and a polished white floor, photographed with a model",
+    "focus": "60% 50%",
+    "hero": false
+  },
+  {
+    "image": "panelling-classic-white",
+    "title": "Classic White Panelling",
+    "category": "Wall Panelling",
+    "alt": "Classic white panel moulding wall with a spotlit centre panel above a grey marble skirting",
+    "focus": "50% 50%",
+    "hero": false
+  },
+  {
+    "image": "panelling-white-wall",
+    "title": "White Panelled Wall",
+    "category": "Wall Panelling",
+    "alt": "Cream wall with framed panel mouldings in a symmetric two-tier layout",
+    "focus": "50% 50%",
+    "hero": false
+  },
+  {
+    "image": "panelling-grey-wall",
+    "title": "Grey Panelled Wall",
+    "category": "Wall Panelling",
+    "alt": "Soft grey wall with tall double-framed panel mouldings above a dado rail",
+    "focus": "50% 50%",
+    "hero": false
+  },
+  {
+    "image": "panelling-sconce-wall",
+    "title": "Panelling with Sconces",
+    "category": "Wall Panelling",
+    "alt": "Taupe panelled wall with two black and gold linear wall sconces",
+    "focus": "50% 50%",
+    "hero": false
+  },
+  {
+    "image": "panelling-round-mirror-wall",
+    "title": "Panelling with Round Mirror",
+    "category": "Wall Panelling",
+    "alt": "Light grey panel moulding wall with a round backlit mirror and a smart-home control panel",
+    "focus": "50% 40%",
+    "hero": false
+  },
+  {
+    "image": "ceiling-curved-chandelier",
+    "title": "Curved Bulkhead Ceiling",
+    "category": "Ceilings",
+    "alt": "Curved two-tier bulkhead ceiling with downlights and a crystal chandelier over a large room with a glossy grey tiled floor",
+    "focus": "50% 35%",
+    "hero": false
+  },
+  {
+    "image": "ceiling-coffered",
+    "title": "Coffered Ceiling",
+    "category": "Ceilings",
+    "alt": "White coffered ceiling with recessed square panels and central downlights",
+    "focus": "50% 50%",
+    "hero": false
+  },
+  {
+    "image": "ceiling-stepped-coffered",
+    "title": "Stepped Coffered Ceiling",
+    "category": "Ceilings",
+    "alt": "Stepped white coffered ceiling with deep layered mouldings and downlights",
+    "focus": "50% 50%",
+    "hero": false
+  },
+  {
+    "image": "ceiling-floating-bulkhead",
+    "title": "Floating Bulkhead Ceiling",
+    "category": "Ceilings",
+    "alt": "Grey ceiling with floating bulkhead beams and recessed edges above large windows",
+    "focus": "50% 50%",
+    "hero": false
+  },
+  {
+    "image": "ceiling-layered-bulkhead",
+    "title": "Layered Bulkhead Ceiling",
+    "category": "Ceilings",
+    "alt": "Multi-level grey bulkhead ceiling with a curved edge and recessed downlights over an open-plan space",
+    "focus": "50% 50%",
+    "hero": false
+  },
+  {
+    "image": "commercial-service-station",
+    "title": "Service Station Canopy",
+    "category": "Commercial",
+    "alt": "Fuel station forecourt at night under a newly finished canopy with a bright green fascia and recessed lights",
+    "focus": "50% 40%",
+    "hero": false
+  },
+  {
+    "image": "commercial-forecourt-ceiling",
+    "title": "Forecourt Ceiling Works",
+    "category": "Commercial",
+    "alt": "Painter on scaffolding finishing the underside of a fuel station canopy at night",
+    "focus": "50% 50%",
+    "hero": false
+  },
+  {
+    "image": "exterior-house-painting",
+    "title": "House Exterior Repaint",
+    "category": "Exterior Painting",
+    "alt": "Painters on scaffolding repainting a grey two-storey house exterior with white window frames",
+    "focus": "50% 50%",
+    "hero": false
+  },
+  {
+    "image": "exterior-portico-painting",
+    "title": "Portico Repaint",
+    "category": "Exterior Painting",
+    "alt": "Painter on scaffolding repainting a grey entrance portico with a decorative ceiling over a paved driveway",
+    "focus": "50% 50%",
     "hero": false
   }
 ]

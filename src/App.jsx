@@ -10,6 +10,7 @@ const ProjectDetail = sub('ProjectDetail');
 const Services = lazy(() => import('./pages/Services'));
 const About = lazy(() => import('./pages/About'));
 const Contact = lazy(() => import('./pages/Contact'));
+const Catalogue = lazy(() => import('./pages/Catalogue'));
 const Privacy = sub('Privacy');
 const NotFound = sub('NotFound');
 
@@ -20,6 +21,7 @@ export default function App() {
         <Route index element={<Home />} />
         <Route path="portfolio" element={<Portfolio />} />
         <Route path="portfolio/:slug" element={<ProjectDetail />} />
+        <Route path="catalogue" element={<Catalogue />} />
         <Route path="services" element={<Services />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />

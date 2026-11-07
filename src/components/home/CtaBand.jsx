@@ -4,7 +4,7 @@ import ResponsiveImage from '../ui/ResponsiveImage';
 import site from '../../content/site.json';
 import work from '../../content/work.json';
 
-const photo = work.find((w) => w.image === 'living-white-panelled');
+const photo = work.find((w) => w.image === 'panelling-gallery-hallway');
 
 /** The one bold gold moment on a page — booking call-to-action band (architecture §6.10). */
 export default function CtaBand() {

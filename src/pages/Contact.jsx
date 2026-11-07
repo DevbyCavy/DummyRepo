@@ -72,7 +72,7 @@ export default function Contact() {
         title="Contact"
         description="Book Platinum Interior Design on WhatsApp, or send us an email enquiry. Interior designers in Harare, Zimbabwe."
       />
-      <PageHero title="Contact" eyebrow="Get In Touch" />
+      <PageHero title="Contact" eyebrow="Get In Touch" image="wardrobe-open-oak" />
 
       {/* ── Ways to reach us + enquiry form ─────────────────── */}
       <section className="section">

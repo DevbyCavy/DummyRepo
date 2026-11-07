@@ -6,6 +6,18 @@ import CtaBand from '../components/home/CtaBand';
 import BookNowButton from '../components/ui/BookNowButton';
 import SectionHeading from '../components/ui/SectionHeading';
 import ProjectGrid from '../components/portfolio/ProjectGrid';
+import CategoryCards from '../components/catalogue/CategoryCards';
+import Button from '../components/ui/Button';
+
+// Portfolio highlights — a different set from the Home grid (landscape, portrait ×4, landscape).
+const PORTFOLIO_ORDER = [
+  'living-tv-wall-led',
+  'living-recliner-lounge',
+  'bedroom-panelled-headboard-wall',
+  'kitchen-mirrored-wall-unit',
+  'ceiling-curved-chandelier',
+  'kitchen-glass-display-unit',
+];
 import site from '../content/site.json';
 import { useConsent } from '../lib/consent';
 
@@ -15,12 +27,24 @@ export function Portfolio() {
   return (
     <>
       <Seo title="Portfolio" description="Residential, commercial and hospitality interiors by Platinum Interior Design." />
-      <PageHero title="Portfolio" eyebrow="Our Work" crumbs={[]} />
+      <PageHero title="Portfolio" eyebrow="Our Work" image="living-white-tv-lounge" />
       <section className="section">
         <div className="container-content">
-          <SectionHeading title="All Projects" divider />
+          <SectionHeading title="Highlights" divider />
           <div className="mt-16">
-            <ProjectGrid placement="portfolio" />
+            <ProjectGrid placement="portfolio" order={PORTFOLIO_ORDER} />
+          </div>
+        </div>
+      </section>
+
+      <section className="section bg-champagne">
+        <div className="container-content">
+          <SectionHeading eyebrow="The Catalogue" title="Browse by Category" divider />
+          <CategoryCards className="mt-16" />
+          <div className="mt-14 flex justify-center">
+            <Button to="/catalogue" variant="ghost">
+              View Full Catalogue
+            </Button>
           </div>
         </div>
       </section>

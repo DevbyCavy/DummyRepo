@@ -2,6 +2,7 @@ import BookNowButton from '../ui/BookNowButton';
 import TextLink from '../ui/TextLink';
 import ResponsiveImage from '../ui/ResponsiveImage';
 import work from '../../content/work.json';
+import { categoryByTitle } from '../../lib/catalogue';
 
 const hero = work.find((w) => w.hero) || work[0];
 
@@ -68,8 +69,8 @@ export default function Hero() {
             <p className="caption">Featured Project</p>
             <p className="mt-2 font-display text-2xl uppercase tracking-luxe text-espresso">{hero.title}</p>
             <p className="caption mt-1 text-gold-deep">{hero.category}</p>
-            <TextLink to="/portfolio" className="mt-5">
-              View Project
+            <TextLink to={categoryByTitle(hero.category)?.href || '/catalogue'} className="mt-5">
+              View More
             </TextLink>
           </div>
         </div>

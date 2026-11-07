@@ -11,9 +11,12 @@ export default function RecentWork() {
         <div className="mt-16">
           <ProjectGrid placement="recent-work" />
         </div>
-        <div className="mt-14 flex justify-center">
+        <div className="mt-14 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
           <Button to="/portfolio" variant="ghost">
             View Full Portfolio
+          </Button>
+          <Button to="/catalogue" variant="ghost">
+            Browse the Catalogue
           </Button>
         </div>
       </div>

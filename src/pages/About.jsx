@@ -36,7 +36,7 @@ export default function About() {
         title="About Us"
         description="The story, philosophy and values behind Platinum Interior Design, interior designers in Harare, Zimbabwe."
       />
-      <PageHero title="About Us" eyebrow="Our Studio" />
+      <PageHero title="About Us" eyebrow="Our Studio" image="ceiling-layered-bulkhead" />
 
       {/* ── Story ─────────────────────────────────────────── */}
       <section className="section bg-white">
