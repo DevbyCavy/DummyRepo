@@ -37,13 +37,13 @@ export default function Header() {
 
           {/* Desktop navigation */}
           <nav aria-label="Main" className="hidden lg:block">
-            <ul className="flex items-center gap-8 xl:gap-10">
+            <ul className="flex items-center gap-5 xl:gap-8">
               {NAV_LINKS.map(({ to, label }) => (
                 <li key={to}>
                   <NavLink
                     to={to}
                     end={to === '/'}
-                    className={`group relative label text-[0.6875rem] ${linkColor} transition-colors duration-500`}
+                    className={`group relative label whitespace-nowrap text-[0.6875rem] tracking-[0.18em] xl:tracking-label ${linkColor} transition-colors duration-500`}
                   >
                     {({ isActive }) => (
                       <>
@@ -62,16 +62,18 @@ export default function Header() {
           </nav>
 
           {/* Desktop right: socials + Book Us Now */}
-          <div className="hidden items-center gap-6 lg:flex">
+          <div className="hidden shrink-0 items-center gap-5 lg:flex xl:gap-6">
+            {/* Socials only where there's room, so the nav and button never squeeze */}
             <SocialIcons
               only={['instagram', 'facebook', 'whatsappChannel']}
               tone="gold"
               size="text-sm"
+              className="hidden xl:flex"
             />
             <BookNowButton
               size="sm"
               placement="header"
-              className={`transition-[border-radius] duration-500 ${floating ? 'rounded-full' : 'rounded-none'}`}
+              className={`shrink-0 whitespace-nowrap transition-[border-radius] duration-500 ${floating ? 'rounded-full' : 'rounded-none'}`}
             />
           </div>
 
