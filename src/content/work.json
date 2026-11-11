@@ -426,7 +426,7 @@
   {
     "image": "exterior-house-painting",
     "title": "House Exterior Repaint",
-    "category": "Exterior Painting",
+    "category": "Painting",
     "alt": "Painters on scaffolding repainting a grey two-storey house exterior with white window frames",
     "focus": "50% 50%",
     "hero": false
@@ -434,7 +434,7 @@
   {
     "image": "exterior-portico-painting",
     "title": "Portico Repaint",
-    "category": "Exterior Painting",
+    "category": "Painting",
     "alt": "Painter on scaffolding repainting a grey entrance portico with a decorative ceiling over a paved driveway",
     "focus": "50% 50%",
     "hero": false

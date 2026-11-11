@@ -11,7 +11,7 @@ const ORDER = [
   'Wall Panelling',
   'Ceilings',
   'Commercial',
-  'Exterior Painting',
+  'Painting',
 ];
 
 // Cover photo shown for each category on category cards.
@@ -25,7 +25,7 @@ const COVERS = {
   'Wall Panelling': 'panelling-gallery-hallway',
   Ceilings: 'ceiling-curved-chandelier',
   Commercial: 'commercial-service-station',
-  'Exterior Painting': 'exterior-portico-painting',
+  'Painting': 'exterior-portico-painting',
 };
 
 export const slugify = (s) =>
