@@ -21,7 +21,7 @@ export default function Footer() {
     <footer id="site-footer" className="border-t-2 border-gold bg-sand">
       {/* Brand block */}
       <div className="container-content flex flex-col items-center gap-6 pb-14 pt-20 text-center">
-        <Logo />
+        <Logo variant="stacked" />
         <LogoDivider label={site.tagline} />
       </div>
 

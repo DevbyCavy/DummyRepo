@@ -36,13 +36,15 @@ export default function CtaBand() {
         </div>
       )}
 
-      {/* Faint monogram watermark — TODO(open): swap for the logo mark SVG */}
-      <span
+      {/* Faint logo monogram watermark */}
+      <img
+        src="/logo/mark-white.png"
+        alt=""
         aria-hidden
-        className="pointer-events-none absolute -right-6 top-1/2 -translate-y-1/2 select-none font-display text-[22rem] leading-none text-white/10 md:right-16"
-      >
-        P
-      </span>
+        width="518"
+        height="512"
+        className="pointer-events-none absolute -right-10 top-1/2 h-[22rem] w-auto -translate-y-1/2 select-none opacity-10 md:right-12"
+      />
 
       <div className="container-content relative flex flex-col items-center py-24 text-center md:py-28">
         {/* Narrower on large screens so the content stays clear of the photo */}
